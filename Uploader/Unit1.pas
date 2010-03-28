@@ -1,0 +1,71 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, URLMon, ShellApi, StdCtrls, ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    Button1: TButton;
+    LabeledEdit1: TLabeledEdit;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Label1: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+function DownloadFile(SourceFile, DestFile: string): Boolean;
+begin
+  try
+    Result := UrlDownloadToFile(nil, PChar(SourceFile), PChar(DestFile), 0, nil) = 0;
+  except
+    Result := False;
+  end;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+    SourceFile,DestFile,NowDateF,NowDateF2,NowTimeF,NowTimeF2:string;
+    today : TDateTime;
+  begin
+    today := Now;
+    NowDateF:=DateToStr(today);
+    NowDateF2:=copy(NowDateF,7,4);
+    NowDateF2:=NowDateF2+copy(NowDateF,4,2);
+    NowDateF2:=NowDateF2+copy(NowDateF,1,2);
+    NowTimeF:=TimeToStr(today);
+    NowTimeF2:=copy(NowTimeF,1,2);
+    NowTimeF2:=NowTimeF2+copy(NowTimeF,4,2);
+    NowTimeF2:=NowTimeF2+copy(NowTimeF,7,2);
+    form1.Edit1.Text:=NowDateF;
+    form1.Edit2.Text:=NowTimeF;
+
+  SourceFile:=form1.LabeledEdit1.Text;
+  DestFile:='almanac\'+NowDateF2+NowTimeF2+'.txt';
+
+  if DownloadFile(SourceFile, DestFile) then
+  begin
+    ShowMessage('Download succesful!');
+    // Show downloaded image in your browser
+    ShellExecute(Application.Handle, PChar('open'), PChar(DestFile),
+      PChar(''), nil, SW_NORMAL)
+  end
+  else
+    ShowMessage('Error while downloading ' + SourceFile)
+end;
+
+end.

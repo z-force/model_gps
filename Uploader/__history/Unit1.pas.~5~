@@ -1,0 +1,59 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, URLMon, ShellApi, StdCtrls, ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    Button1: TButton;
+    LabeledEdit1: TLabeledEdit;
+    LabeledEdit2: TLabeledEdit;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+function DownloadFile(SourceFile, DestFile: string): Boolean;
+begin
+  try
+    Result := UrlDownloadToFile(nil, PChar(SourceFile), PChar(DestFile), 0, nil) = 0;
+  except
+    Result := False;
+  end;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+    SourceFile,DestFile:string;
+    today : TDateTime;
+  begin
+    today := Now;
+  ShowMessage('Δενό = '+DateToStr(today));
+  ShowMessage('Βπεμÿ = '+TimeToStr(today));
+  SourceFile:=form1.LabeledEdit1.Text;
+  DestFile:= form1.LabeledEdit2.Text;
+  if DownloadFile(SourceFile, DestFile) then
+  begin
+    ShowMessage('Download succesful!');
+    // Show downloaded image in your browser
+    ShellExecute(Application.Handle, PChar('open'), PChar(DestFile),
+      PChar(''), nil, SW_NORMAL)
+  end
+  else
+    ShowMessage('Error while downloading ' + SourceFile)
+end;
+
+end.

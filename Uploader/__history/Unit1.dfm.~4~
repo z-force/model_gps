@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 346
+  ClientWidth = 536
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 1
+    Top = 0
+    Width = 360
+    Height = 153
+    TabOrder = 0
+    object Button1: TButton
+      Left = 8
+      Top = 94
+      Width = 273
+      Height = 25
+      Caption = 'Button1'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object LabeledEdit1: TLabeledEdit
+      Left = 8
+      Top = 24
+      Width = 273
+      Height = 21
+      EditLabel.Width = 104
+      EditLabel.Height = 13
+      EditLabel.Caption = #1057#1089#1099#1083#1082#1072' '#1085#1072' '#1072#1083#1100#1084#1072#1085#1072#1093
+      TabOrder = 1
+      Text = 'http://www.navcen.uscg.gov/gps/current/current.alm'
+    end
+    object LabeledEdit2: TLabeledEdit
+      Left = 8
+      Top = 67
+      Width = 273
+      Height = 21
+      EditLabel.Width = 82
+      EditLabel.Height = 13
+      EditLabel.Caption = #1052#1077#1089#1090#1086' '#1093#1088#1072#1085#1077#1085#1080#1103
+      TabOrder = 2
+      Text = 'd:\'
+    end
+  end
+end
