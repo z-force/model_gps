@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 431
-  ClientWidth = 738
+  ClientHeight = 346
+  ClientWidth = 536
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -64,26 +64,37 @@ object Form1: TForm1
     TabOrder = 2
   end
   object Panel2: TPanel
-    Left = 303
-    Top = 0
-    Width = 298
-    Height = 241
+    Left = 1
+    Top = 109
+    Width = 520
+    Height = 229
     TabOrder = 3
     object Button2: TButton
       Left = 8
       Top = 2
-      Width = 281
+      Width = 75
       Height = 25
-      Caption = #1047#1072#1075#1088#1091#1079#1080#1090#1100' '#1072#1083#1100#1084#1072#1085#1072#1093
+      Caption = 'Button2'
       TabOrder = 0
       OnClick = Button2Click
     end
-    object Memo1: TMemo
-      Left = 8
-      Top = 33
-      Width = 281
-      Height = 199
+    object Button3: TButton
+      Left = 89
+      Top = 2
+      Width = 75
+      Height = 25
+      Caption = 'Button3'
       TabOrder = 1
+      OnClick = Button3Click
+    end
+    object Memo1: TMemo
+      Left = 170
+      Top = 18
+      Width = 327
+      Height = 199
+      Lines.Strings = (
+        'Memo1')
+      TabOrder = 2
     end
   end
 end

@@ -16,9 +16,11 @@ type
     Label1: TLabel;
     Panel2: TPanel;
     Button2: TButton;
+    Button3: TButton;
     Memo1: TMemo;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,12 +44,12 @@ begin
   end;
 end;
 
-Function CreateName():string;
+procedure TForm1.Button1Click(Sender: TObject);
 var
-today : TDateTime;
-NowDateF,NowDateF2,NowTimeF,NowTimeF2:string;
-begin
-     today := Now;
+    SourceFile,DestFile,NowDateF,NowDateF2,NowTimeF,NowTimeF2:string;
+    today : TDateTime;
+  begin
+    today := Now;
     NowDateF:=DateToStr(today);
     NowDateF2:=copy(NowDateF,7,4);
     NowDateF2:=NowDateF2+copy(NowDateF,4,2);
@@ -58,15 +60,9 @@ begin
     NowTimeF2:=NowTimeF2+copy(NowTimeF,7,2);
     form1.Edit1.Text:=NowDateF;
     form1.Edit2.Text:=NowTimeF;
-  Result:='almanac\'+NowDateF2+NowTimeF2+'.txt';
-end;
 
-procedure TForm1.Button1Click(Sender: TObject);
-var
-    SourceFile,DestFile:string;
-  begin
   SourceFile:=form1.LabeledEdit1.Text;
-  DestFile:=CreateName();
+  DestFile:='almanac\'+NowDateF2+NowTimeF2+'.txt';
 
   if DownloadFile(SourceFile, DestFile) then
   begin
@@ -82,8 +78,7 @@ procedure TForm1.Button2Click(Sender: TObject);
 var
   SR: TSearchRec;
   iTime: Integer;
-   BatchFile: TextFile;
- s:string;
+
 begin
     if FindFirst('almanac\' + '*.txt', faAnyFile, SR) = 0 then
     begin
@@ -98,10 +93,15 @@ begin
     end;
     sResultFile:='almanac\'+sResultFile;
     ShowMessage(sResultFile);
+end;
 
-    AssignFile(BatchFile,sResultFile);
+procedure TForm1.Button3Click(Sender: TObject);
+var
+ BatchFile: TextFile;
+ s:string;
+begin
+AssignFile(BatchFile,sResultFile);
 Reset(BatchFile);
-Memo1.Lines.Clear;
 While not eof(BatchFile) do
   begin
     Readln(BatchFile, s);
@@ -109,7 +109,5 @@ While not eof(BatchFile) do
   end;
 CloseFile(BatchFile);
 end;
-
-
 
 end.

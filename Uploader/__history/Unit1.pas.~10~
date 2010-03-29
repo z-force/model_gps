@@ -16,9 +16,11 @@ type
     Label1: TLabel;
     Panel2: TPanel;
     Button2: TButton;
+    Button3: TButton;
     Memo1: TMemo;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -82,8 +84,7 @@ procedure TForm1.Button2Click(Sender: TObject);
 var
   SR: TSearchRec;
   iTime: Integer;
-   BatchFile: TextFile;
- s:string;
+
 begin
     if FindFirst('almanac\' + '*.txt', faAnyFile, SR) = 0 then
     begin
@@ -98,10 +99,15 @@ begin
     end;
     sResultFile:='almanac\'+sResultFile;
     ShowMessage(sResultFile);
+end;
 
-    AssignFile(BatchFile,sResultFile);
+procedure TForm1.Button3Click(Sender: TObject);
+var
+ BatchFile: TextFile;
+ s:string;
+begin
+AssignFile(BatchFile,sResultFile);
 Reset(BatchFile);
-Memo1.Lines.Clear;
 While not eof(BatchFile) do
   begin
     Readln(BatchFile, s);
@@ -109,7 +115,5 @@ While not eof(BatchFile) do
   end;
 CloseFile(BatchFile);
 end;
-
-
 
 end.
