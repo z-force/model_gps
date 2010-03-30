@@ -126,8 +126,8 @@ procedure TForm1.Button3Click(Sender: TObject);
    Week:string;
    ID:string;
    Health:string;
-   Eccentricity:string;
-   Time_of_Applicability:string;
+   Eccentricity:string
+   ToA:string;
  end;
  var
   LengthF,i:integer;
@@ -162,8 +162,8 @@ form1.LabeledEdit6.Text:=Sattelite.Eccentricity;
 
 //Parsing Time_of_Applicability
 inc(i);
-Sattelite.Time_of_Applicability:=copy(List[i],28,11);
-form1.LabeledEdit3.Text:=Sattelite.Time_of_Applicability;
+Sattelite.ToA:=copy(List[i],28,11);
+form1.LabeledEdit3.Text:=Sattelite.ToA;
 
 //Destruct
 List.Free;

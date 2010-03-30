@@ -20,10 +20,10 @@ type
     Panel3: TPanel;
     Button3: TButton;
     LabeledEdit2: TLabeledEdit;
+    LabeledEdit3: TLabeledEdit;
     LabeledEdit4: TLabeledEdit;
     LabeledEdit5: TLabeledEdit;
     LabeledEdit6: TLabeledEdit;
-    LabeledEdit3: TLabeledEdit;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -124,10 +124,10 @@ procedure TForm1.Button3Click(Sender: TObject);
  type
   Tsattelite=record
    Week:string;
+   PRN:string;
    ID:string;
    Health:string;
-   Eccentricity:string;
-   Time_of_Applicability:string;
+   Eccentricity:string
  end;
  var
   LengthF,i:integer;
@@ -145,6 +145,10 @@ LengthF := List.Count;
 Sattelite.Week:=copy(List[i],15,3);
 form1.LabeledEdit2.Text:=Sattelite.Week;
 
+//Parsing PRN
+Sattelite.PRN:=copy(List[i],35,2);
+form1.LabeledEdit3.Text:=Sattelite.PRN;
+
 //Parsing ID
 inc(i);
 Sattelite.ID:=copy(List[i],29,2);
@@ -159,11 +163,6 @@ form1.LabeledEdit5.Text:=Sattelite.Health;
 inc(i);
 Sattelite.Eccentricity:=copy(List[i],29,17);
 form1.LabeledEdit6.Text:=Sattelite.Eccentricity;
-
-//Parsing Time_of_Applicability
-inc(i);
-Sattelite.Time_of_Applicability:=copy(List[i],28,11);
-form1.LabeledEdit3.Text:=Sattelite.Time_of_Applicability;
 
 //Destruct
 List.Free;

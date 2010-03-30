@@ -93,8 +93,8 @@ object Form1: TForm1
     Height = 428
     TabOrder = 4
     object Button3: TButton
-      Left = 144
-      Top = -2
+      Left = 8
+      Top = 8
       Width = 75
       Height = 25
       Caption = 'Button3'
@@ -102,59 +102,44 @@ object Form1: TForm1
       OnClick = Button3Click
     end
     object LabeledEdit2: TLabeledEdit
-      Left = 0
-      Top = 0
-      Width = 106
+      Left = 8
+      Top = 64
+      Width = 33
       Height = 21
       EditLabel.Width = 27
       EditLabel.Height = 13
       EditLabel.Caption = 'Week'
-      LabelPosition = lpRight
       TabOrder = 1
     end
+    object LabeledEdit3: TLabeledEdit
+      Left = 47
+      Top = 64
+      Width = 26
+      Height = 21
+      EditLabel.Width = 20
+      EditLabel.Height = 13
+      EditLabel.Caption = 'PRN'
+      TabOrder = 2
+    end
     object LabeledEdit4: TLabeledEdit
-      Left = 0
-      Top = 21
-      Width = 106
+      Left = 79
+      Top = 64
+      Width = 26
       Height = 21
       EditLabel.Width = 11
       EditLabel.Height = 13
       EditLabel.Caption = 'ID'
-      LabelPosition = lpRight
-      TabOrder = 2
+      TabOrder = 3
     end
     object LabeledEdit5: TLabeledEdit
-      Left = 0
-      Top = 42
-      Width = 106
+      Left = 111
+      Top = 64
+      Width = 26
       Height = 21
       EditLabel.Width = 31
       EditLabel.Height = 13
       EditLabel.Caption = 'Health'
-      LabelPosition = lpRight
-      TabOrder = 3
-    end
-    object LabeledEdit6: TLabeledEdit
-      Left = 0
-      Top = 63
-      Width = 106
-      Height = 21
-      EditLabel.Width = 55
-      EditLabel.Height = 13
-      EditLabel.Caption = 'Eccentricity'
-      LabelPosition = lpRight
       TabOrder = 4
-    end
-    object LabeledEdit3: TLabeledEdit
-      Left = 0
-      Top = 84
-      Width = 106
-      Height = 21
-      EditLabel.Width = 100
-      EditLabel.Height = 13
-      EditLabel.Caption = 'Time_of_Applicability'
-      LabelPosition = lpRight
-      TabOrder = 5
     end
   end
 end

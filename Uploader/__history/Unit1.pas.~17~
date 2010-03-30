@@ -126,7 +126,7 @@ procedure TForm1.Button3Click(Sender: TObject);
    Week:string;
    ID:string;
    Health:string;
-   Eccentricity:string;
+   Eccentricity:string
    Time_of_Applicability:string;
  end;
  var
