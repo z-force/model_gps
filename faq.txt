@@ -1,0 +1,26 @@
+1)http://code.google.com/p/msysgit/downloads/list
+Git-1.7.8-preview20111206.exe
+2)mkdir .ssh
+3)cd ~/.ssh
+4)ssh-keygen -t rsa -C "andrew.gucalyuk@gmail.com"
+5)On the GitHub site Click “Account Settings” > Click “SSH Public Keys” > Click “Add another public key”
+6)Open the id_rsa.pub file with a text editor (Notepad, TextEdit, or gedit will do just fine). This is your public SSH key. You may need turn on “view hidden files” to find it because the .ssh directory is hidden. It’s important you copy your SSH key exactly as it is written without adding any newlines or whitespace. Now paste it into the “Key” field.
+7)Hit “Add Key.”
+8)git config --global user.name "z-force"
+git config --global user.email "andrew.gucalyuk@gmail.com"
+9)git config --global github.user z-force
+git config --global github.token 09afe1a43bf9ccae68764fd1701e7420
+10)vim config
+11)Host github.com
+  User z-force
+  Port 22
+  Hostname github.com
+  IdentityFile ~/.ssh/èìÿ òâîåãî êëþ÷à
+  IdentitiesOnly yes
+12)cd ..
+13)git clone git@github.com:z-force/model_gps.git model_gps
+14)cd model_gps
+15)gitk --all
+16)git pull
+17)git add README
+18)git commit -m "README: testing"
