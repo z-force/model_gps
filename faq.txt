@@ -72,4 +72,5 @@ git checkout expirementalBrunch
 коммитим что нужно
 вернутьс€ обратно
 git checkout master
-
+32)¬ыполнить сведение веток, наход€сь в ветке master
+git merge experimentalBrunch
