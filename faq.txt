@@ -65,4 +65,11 @@ $ git clone git://сервер/путь/до/файлов
 $ git diff
 30)Статус изменений
 git status
+31)Создать новую ветку для экспериментов
+git branch expirementalBranch
+переключиться на неё
+git checkout expirementalBrunch
+коммитим что нужно
+вернуться обратно
+git checkout master
 
