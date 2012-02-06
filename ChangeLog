@@ -1,0 +1,239 @@
+commit f3ba563af6150de591ab7642600fb0d7d71002f5
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Feb 6 13:21:06 2012 +0400
+
+    revert commit
+
+commit 7f44c089d9e0a53197ab3ff9a39d9b6b1ba931b2
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Feb 6 13:16:58 2012 +0400
+
+    README: trash2 commit
+
+commit dfaaad09e19782ce097bff08ede46ed186035249
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Feb 6 13:14:48 2012 +0400
+
+    Revert "README: trash commit"
+    
+    This reverts commit 23a78df535f6a4d78d825d5c38d6638a20ee18d4.
+
+commit 23a78df535f6a4d78d825d5c38d6638a20ee18d4
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Feb 6 13:13:58 2012 +0400
+
+    README: trash commit
+
+commit 65f22bd5c385a7578930ad99082d6c994cf250de
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Sun Feb 5 20:16:23 2012 +0400
+
+    Revert "zxc"
+    
+    This reverts commit c702fd1fa82d04cbad6732c7a9c4d441cd437711.
+
+commit c702fd1fa82d04cbad6732c7a9c4d441cd437711
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Sun Feb 5 20:06:05 2012 +0400
+
+    zxc
+
+commit b64ba312d8728263b5a81e942416cbf6a09f20e3
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Fri Feb 3 01:07:35 2012 +0400
+
+    README: add testing string
+
+commit 55f8743d669eb0f24f694027db6868e90da085a1
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Feb 2 23:50:48 2012 +0400
+
+    README: test
+
+commit 71a3a33a773a9c666320dd1b430b5ffb97c576d4
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Jan 16 22:20:12 2012 +0400
+
+    faq.txt: log graph
+
+commit 83d0d2ebea3fc0c376743f91b43c5289e3d73396
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Jan 16 20:33:09 2012 +0400
+
+    faq.txt: merge
+
+commit cd2bcc05da12a109bf07f87c1d0dd68c9fee255c
+Merge: e513dd3 70859d8
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Jan 16 20:29:43 2012 +0400
+
+    Merge branch 'expirementalBrunch'
+
+commit e513dd3794cff93d9336b43f4ff5f10d9307b187
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Jan 16 19:58:50 2012 +0400
+
+    faq.txt: brunch
+
+commit 70859d8d23c93b78738d38cb16aa1029b5fdddb0
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Jan 16 19:54:49 2012 +0400
+
+    README: test
+
+commit e8a02d584f20796de783e05b3e7202675e960009
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Jan 16 19:18:44 2012 +0400
+
+    faq.txt: status
+
+commit 3746a5cd13702e1d198b6c2ca3296be68be5cca3
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Fri Jan 13 21:39:36 2012 +0400
+
+    faq.txt: diff
+
+commit 164767d814a4d277344646a8bc0a1e1fb3d5f275
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Fri Jan 13 20:33:21 2012 +0400
+
+    README: test
+
+commit 736c01d2867e8e14add8f5a8402339412f51fe23
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Fri Jan 13 19:58:51 2012 +0400
+
+    faq.txt: clone project
+
+commit 7dc846e5dd3fc687611550d8f74ffb6353cedcc3
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Fri Jan 13 19:23:08 2012 +0400
+
+    faq.txt: ChangeLog
+
+commit f87469f08c3c4550c6f4ff9301c2c4dc026d2a83
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Jan 12 23:20:08 2012 +0400
+
+    Revert "README: blablabla"
+    
+    This reverts commit 74cd32565f44913028e74f937ababef24b4b7b2a.
+    
+    Conflicts:
+    
+    	README
+
+commit 01315e3bcaba563761254b165794b1535ff4162e
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Jan 12 22:40:45 2012 +0400
+
+    faq.txt: checkout
+
+commit d172887f27b4a2e915f51538b499921d79e8aced
+Merge: f1e8bc5 af5e3f5
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Jan 12 22:38:23 2012 +0400
+
+    Merge branch 'master' of github.com:z-force/model_gps
+
+commit f1e8bc59b445e3fcf8df541d70b7610c6cfb1601
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Jan 12 22:27:52 2012 +0400
+
+    README: test
+
+commit af5e3f5b9a87bf81af126d2bbb04cd81c3bd9b76
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Jan 12 21:59:56 2012 +0400
+
+    faq.txt: hard
+
+commit 74cd32565f44913028e74f937ababef24b4b7b2a
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Jan 12 21:43:28 2012 +0400
+
+    README: blablabla
+
+commit eacd2e6c76d15c9e35f1bd25516127fe50c43ca8
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Jan 12 20:35:28 2012 +0400
+
+    faq.txt:log
+
+commit 48278988884bb090da12f250582c58ac6ef3cf27
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Jan 12 19:47:31 2012 +0400
+
+    faq.txt: move file
+
+commit 635aa4b5ca3f8b9234a0b680dfd04d75e4eac162
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Jan 12 18:47:56 2012 +0400
+
+    faq.tst: delete files
+
+commit aed6cb2e6e24ae7d765437f2a4772f4914eb073e
+Author: unknown <z-force@ssd-se7en.(none)>
+Date:   Tue Jan 3 22:38:02 2012 +0400
+
+    README: test
+
+commit 3e3b06df39310df05aa9b511ae278658dfbd9d49
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Fri Dec 30 14:29:00 2011 +0400
+
+    faq.txt: backup
+
+commit 6a6eee34cec79b29b143e4a543a57a54f3fcad88
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Fri Dec 30 14:26:20 2011 +0400
+
+    backup
+
+commit cb595e6e0501bc9392b5ff23ca12f994705d456e
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Dec 22 01:45:22 2011 +0400
+
+    faq.txt: add final step
+
+commit 38a6592c7b7480df6f94a0c0a6500891a2c0703c
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Dec 22 01:37:32 2011 +0400
+
+    faq.txt: create man
+
+commit 92699a1fbe55e593d7112ccf43fa5bec755c02c4
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Thu Dec 22 01:24:06 2011 +0400
+
+    README: testing
+
+commit f46bef7cdc973bc1ffd45ca8b941fb72565b27a8
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Wed Mar 31 02:12:17 2010 +0400
+
+    Uploader: begin parsing
+
+commit 0e6409a85ba1eaae3258ce8291d087c36c3f1ca1
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Mon Mar 29 19:15:44 2010 +0400
+
+    Uploader: load almanac in form
+
+commit 60b570da6f0f82ce6e4f73a62a030af0c928bc29
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Sun Mar 28 21:31:59 2010 +0400
+
+    first version
+
+commit 98a71e045f2d00de6a6289470b9abb7cb55ea861
+Author: z-force <andrew.gucalyuk@gmail.com>
+Date:   Fri Mar 19 19:56:44 2010 +0300
+
+    README: add test string
+
+commit 004bcccfe0baa5f097b3eb2f965cd22535e955b9
+Author: z-force <z-force@.(none)>
+Date:   Fri Mar 19 19:53:01 2010 +0300
+
+    first commit
