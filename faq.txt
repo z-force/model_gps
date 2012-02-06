@@ -68,9 +68,9 @@ $ git diff
 30)Статус изменений
 git status
 31)Создать новую ветку для экспериментов
-git branch expirementalBranch
+git branch experimentalBranch
 переключиться на неё
-git checkout expirementalBranch
+git checkout experimentalBranch
 коммитим что нужно
 вернуться обратно
 git checkout master
