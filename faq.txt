@@ -70,9 +70,9 @@ git status
 31)Создать новую ветку для экспериментов
 git branch expirementalBranch
 переключиться на неё
-git checkout expirementalBrunch
+git checkout expirementalBranch
 коммитим что нужно
 вернуться обратно
 git checkout master
 32)Выполнить сведение веток, находясь в ветке master
-git merge experimentalBrunch
+git merge experimentalBranch
