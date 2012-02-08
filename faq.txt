@@ -76,3 +76,4 @@ git checkout experimentalBranch
 git checkout master
 32)Выполнить сведение веток, находясь в ветке master
 git merge experimentalBranch
+33)$ ssh-add ~/.ssh/id_rsa добавить сгенерированный ключ в систему
