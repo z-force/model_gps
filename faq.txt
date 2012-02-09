@@ -77,3 +77,14 @@ git checkout master
 32)Выполнить сведение веток, находясь в ветке master
 git merge experimentalBranch
 33)$ ssh-add ~/.ssh/id_rsa добавить сгенерированный ключ в систему
+34)Для игнорирования файлов которые не хочется видеть в сводке git status, создаём файл .gitignore
+#комментарий к файлу .gitignore
+#игнорируем сам .gitignore
+.gitignore
+#все html-файлы...
+*.html
+#...кроме определенного
+!special.html
+#не нужны объектники и архивы
+*.[ao]
+
