@@ -1,0 +1,50 @@
+Node _o10(id 0)
+		rtsize_1()
+		ptnotif__o11(RtModule/Base)
+		dmux__o38(Classifier/Port)
+		rtnotif__o11(RtModule/Base)
+		mod_assoc_	_o12 _o11
+		nodetype_(NULL_OBJECT)
+		reg_module_	Base _o11
+		classifier__o12(Classifier/Hash/Dest)
+		address_0()
+		multiPath_0()
+
+	Agents at node (possibly in order of creation):
+		_o36	Agent/UDP		dst-addr/port: 1/0
+
+	Link _o17, fromNode_ _o10(id 0) -> toNode_ _o13(id 1)
+	Components (in order) head first
+		_o19	Connector
+		_o22	Trace/Enque
+		_o16	Queue/DropTail
+		_o23	Trace/Deque
+		_o20	DelayLink
+		_o21	TTLChecker
+		_o25	Trace/Recv
+---
+Node _o13(id 1)
+		rtsize_1()
+		ptnotif__o14(RtModule/Base)
+		dmux__o39(Classifier/Port)
+		rtnotif__o14(RtModule/Base)
+		mod_assoc_	_o15 _o14
+		nodetype_(NULL_OBJECT)
+		reg_module_	Base _o14
+		classifier__o15(Classifier/Hash/Dest)
+		address_1()
+		multiPath_0()
+
+	Agents at node (possibly in order of creation):
+		_o37	Agent/Null		dst-addr/port: 0/0
+
+	Link _o27, fromNode_ _o13(id 1) -> toNode_ _o10(id 0)
+	Components (in order) head first
+		_o29	Connector
+		_o32	Trace/Enque
+		_o26	Queue/DropTail
+		_o33	Trace/Deque
+		_o30	DelayLink
+		_o31	TTLChecker
+		_o35	Trace/Recv
+---
